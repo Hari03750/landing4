@@ -11,7 +11,7 @@ body {
   align-items: center;
   background-color: #1e293b;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -72,15 +72,54 @@ body {
   color: white;
 }
 
-.register-section {
-  text-align: center;
+.about-section,
+.projects-section,
+.register-section,
+.contact-section {
   padding: 5rem 2rem;
-  background-color: #1e293b;
+  text-align: center;
 }
 
-.register-section h2 {
+.about-section h2,
+.projects-section h2,
+.register-section h2,
+.contact-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+}
+
+.about-section p,
+.contact-section p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #334155;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #fbbf24;
+  margin-bottom: 0.5rem;
 }
 
 .register-section form {

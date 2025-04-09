@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prodigy Infotech</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">Prodigy <span>Infotech</span></div>
     <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">Careers</a>
-      <a href="#">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#register">Join</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
-  <header class="hero-section">
+  <header id="home" class="hero-section">
     <h1>Innovate. Code. Grow.</h1>
     <p>Shaping the future with technology and talent.</p>
     <a href="#register" class="btn-primary">Join Us</a>
   </header>
 
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>Prodigy Infotech is a leading technology solutions provider focused on empowering students, developers, and businesses through real-world tech training and project experience. Our mission is to create innovation-driven leaders.</p>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2>Our Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Smart Farming System</h3>
+        <p>IoT-based soil moisture detection and auto-irrigation setup using Arduino.</p>
+      </div>
+      <div class="project-card">
+        <h3>College PrintHub App</h3>
+        <p>A mobile-first platform connecting students with nearby Xerox shops.</p>
+      </div>
+      <div class="project-card">
+        <h3>TFET Simulation</h3>
+        <p>Advanced transistor modeling and performance analysis using Silvaco.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="register" class="register-section">
     <h2>Register with Prodigy Infotech</h2>
     <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
       <button type="submit" class="btn-primary">Submit</button>
     </form>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: contact@prodigyinfotech.in</p>
+    <p>Location: Mumbai, India</p>
   </section>
 
   <footer>
